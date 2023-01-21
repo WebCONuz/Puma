@@ -241,6 +241,47 @@ header {
         }
       }
     }
+    &__bottom {
+      position: absolute;
+      bottom: -67px;
+      left: 230px;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 792px;
+      height: 125px;
+      background: #ffffff;
+      box-shadow: 0px 1px 14px rgba(26, 10, 3, 0.05);
+      border-radius: 5px;
+      &--item {
+        align-items: center;
+        p {
+          color: #1a0a03;
+          opacity: 0.7;
+          text-transform: capitalize;
+          margin-bottom: 0.7rem;
+        }
+        h3 {
+          font-weight: 500;
+          font-size: 18px;
+          span {
+            margin-right: 5px;
+          }
+        }
+        .line {
+          width: 1px;
+          height: 42px;
+          background-color: $orange;
+          margin-left: 3rem;
+        }
+      }
+      &--button {
+        padding: 15px 30px;
+        background-color: $orange;
+        border-radius: 5px;
+        font-size: 18px;
+        color: #fff;
+      }
+    }
   }
   .video {
     width: 100%;

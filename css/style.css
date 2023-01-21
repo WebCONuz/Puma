@@ -227,6 +227,47 @@ header .nav__list--btn a {
   left: 5px;
   z-index: 1;
 }
+#main .home__bottom {
+  position: absolute;
+  bottom: -67px;
+  left: 230px;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 792px;
+  height: 125px;
+  background: #ffffff;
+  box-shadow: 0px 1px 14px rgba(26, 10, 3, 0.05);
+  border-radius: 5px;
+}
+#main .home__bottom--item {
+  align-items: center;
+}
+#main .home__bottom--item p {
+  color: #1a0a03;
+  opacity: 0.7;
+  text-transform: capitalize;
+  margin-bottom: 0.7rem;
+}
+#main .home__bottom--item h3 {
+  font-weight: 500;
+  font-size: 18px;
+}
+#main .home__bottom--item h3 span {
+  margin-right: 5px;
+}
+#main .home__bottom--item .line {
+  width: 1px;
+  height: 42px;
+  background-color: #ee5514;
+  margin-left: 3rem;
+}
+#main .home__bottom--button {
+  padding: 15px 30px;
+  background-color: #ee5514;
+  border-radius: 5px;
+  font-size: 18px;
+  color: #fff;
+}
 #main .video {
   width: 100%;
   height: 100vh;
