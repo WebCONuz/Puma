@@ -153,6 +153,7 @@ header {
 // Body Main Styles ----------------------------------------------------------
 #main {
   .home {
+    // overflow-x: hidden;
     width: 100%;
     height: 100vh;
     position: relative;
@@ -176,10 +177,10 @@ header {
       width: 50%;
       &-title {
         width: 366px;
-        font-size: 61px;
+        font-size: 3.8rem;
         font-family: "Source Serif Pro", serif;
-        line-height: 73.2px;
-        margin-bottom: 20px;
+        line-height: 4.6rem;
+        margin-bottom: 1.25rem;
         span {
           font-family: "Source Serif Pro", serif;
           color: $orange;
@@ -187,7 +188,7 @@ header {
       }
       &-text {
         width: 326px;
-        line-height: 25.6px;
+        line-height: 1.6rem;
         opacity: 0.7;
       }
     }
@@ -220,11 +221,14 @@ header {
           height: 100%;
           border: 10px solid #f7b69a;
           position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
           .krosovka {
-            position: absolute;
-            top: -5%;
-            left: -35%;
+            width: 100%;
+            position: relative;
             z-index: 2;
+            transform: scale(1.5) translateX(-5%);
           }
           .ellipse {
             position: absolute;
@@ -244,7 +248,7 @@ header {
     &__bottom {
       position: absolute;
       bottom: -67px;
-      left: 230px;
+      left: 15%;
       align-items: center;
       justify-content: space-evenly;
       width: 792px;
@@ -287,5 +291,246 @@ header {
     width: 100%;
     height: 100vh;
     border: 1px solid red;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #main {
+    .home {
+      &__slider {
+        &-card {
+          width: 100%;
+          padding: 0 50px;
+          &--arrow {
+            right: -25px;
+            z-index: 3;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  #main {
+    .home {
+      &__slider {
+        &-card {
+          width: 85%;
+          height: 350px;
+          padding: 0 20px;
+          &--arrow {
+            right: -50px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  // Header Section
+  header {
+    .nav {
+      &__logo {
+        width: 95px;
+        margin-right: 186px;
+      }
+      &__burger {
+        display: flex;
+      }
+      &__list {
+        position: absolute;
+        top: 125px;
+        left: -100%;
+        background-color: #fff;
+        height: calc(100vh - 125px);
+        justify-content: center;
+        flex-direction: column;
+        border-top: 1px solid rgba($color: #000000, $alpha: 0.5);
+        transition: all 0.2s;
+        &.active {
+          left: 0;
+          top: 125px;
+          height: calc(100vh - 125px);
+        }
+        &.active-scroll {
+          top: 75px;
+          height: calc(100vh - 75px);
+        }
+        &--item {
+          margin-right: 0;
+          margin-bottom: 1.7rem;
+          &-link {
+            font-size: 1.6rem;
+          }
+        }
+        &--btn {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
+  // Main Section
+  #main {
+    .home {
+      padding: 150px 0;
+      height: auto;
+      &::after {
+        width: 100%;
+        background: linear-gradient(105deg, $pink 70%, #fff 70%);
+      }
+      .container {
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        height: auto;
+      }
+      &__left {
+        width: 100%;
+        margin-bottom: 2rem;
+        &-title {
+          width: 366px;
+          margin: 0 auto 1.25rem;
+          text-align: center;
+        }
+        &-text {
+          width: 326px;
+          margin: 0 auto;
+          text-align: center;
+        }
+      }
+      &__slider {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        &-card {
+          width: 60%;
+          padding: 0;
+          &--arrow {
+            top: 50%;
+            right: -100px;
+          }
+          &--border {
+            .krosovka {
+              transform: scale(1.4) translateX(-3%);
+            }
+            .ellipse {
+              left: -15%;
+            }
+          }
+        }
+      }
+      &__bottom {
+        bottom: -45px;
+        left: 10%;
+        width: 510px;
+        height: 90px;
+        &--item {
+          p {
+            margin-bottom: 0.3rem;
+          }
+          h3 {
+            font-weight: 500;
+            font-size: 18px;
+            span {
+              margin-right: 3px;
+            }
+            img {
+              width: 0.8rem;
+              height: 0.4rem;
+            }
+          }
+          .line {
+            height: 42px;
+            margin-left: 1rem;
+          }
+        }
+        &--button {
+          padding: 8px 16px;
+          font-size: 1rem;
+        }
+      }
+    }
+    .video {
+      width: 100%;
+      height: 100vh;
+      border: 1px solid red;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  // Main Section
+  #main {
+    .home {
+      &__slider {
+        &-card {
+          width: 75%;
+          padding: 0;
+          &--arrow {
+            top: 50%;
+            right: -70px;
+          }
+          &--border {
+            .ellipse {
+              left: 0%;
+              width: 100%;
+            }
+          }
+        }
+      }
+      &__bottom {
+        left: 5%;
+      }
+    }
+    .video {
+      width: 100%;
+      height: 100vh;
+      border: 1px solid red;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  // Main Section
+  #main {
+    .home {
+      padding: 150px 0 100px 0;
+      &__slider {
+        &-card {
+          width: 75%;
+          height: auto;
+          padding: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          &--arrow {
+            top: 50%;
+            right: -70px;
+          }
+          &--border {
+            .krosovka {
+              position: relative;
+              width: 100%;
+              transform: scale(1.5);
+            }
+            .ellipse {
+              left: 0%;
+              width: 100%;
+            }
+          }
+        }
+      }
+      &__bottom {
+        display: none;
+      }
+    }
+    .video {
+      width: 100%;
+      height: 100vh;
+      border: 1px solid red;
+    }
   }
 }
