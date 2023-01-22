@@ -164,6 +164,7 @@ header {
 
 // Body Main Styles ----------------------------------------------------------
 #main {
+  // home
   .home {
     // overflow-x: hidden;
     width: 100%;
@@ -333,6 +334,8 @@ header {
       }
     }
   }
+
+  // about
   .about {
     width: 100%;
     height: 100vh;
@@ -352,8 +355,8 @@ header {
       }
       &--title {
         font-family: "Source Serif Pro", serif;
-        font-size: 44px;
-        line-height: 57.2px;
+        font-size: 2.75rem;
+        line-height: 3.575rem;
         width: 340px;
         margin-bottom: 1.25rem;
       }
@@ -373,12 +376,14 @@ header {
       height: 380px;
       position: relative;
       .front {
+        width: 90%;
         position: absolute;
         left: 0;
         bottom: 0;
         z-index: 1;
       }
       .back {
+        width: 90%;
         position: absolute;
         top: 0;
         right: 0;
@@ -406,6 +411,7 @@ header {
 
 @media screen and (max-width: 1200px) {
   #main {
+    // home
     .home {
       &__slider {
         .owl-carousel {
@@ -418,6 +424,12 @@ header {
             }
           }
         }
+      }
+    }
+    // about
+    .about {
+      &__video {
+        height: 300px;
       }
     }
   }
@@ -489,6 +501,7 @@ header {
 
   // Main Section
   #main {
+    // home
     .home {
       padding: 150px 0;
       height: auto;
@@ -580,12 +593,20 @@ header {
         }
       }
     }
+
+    // about
+    .about {
+      &__video {
+        height: 250px;
+      }
+    }
   }
 }
 
 @media screen and (max-width: 768px) {
   // Main Section
   #main {
+    // home
     .home {
       &__left {
         &-title {
@@ -617,6 +638,41 @@ header {
       }
       &__bottom {
         left: 5%;
+      }
+    }
+    // about
+    .about {
+      height: auto;
+      padding: 6rem 0 3rem 0;
+      .container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        height: 100%;
+        flex-direction: column;
+      }
+      &__text {
+        width: 100%;
+        margin-bottom: 3rem;
+        &--title {
+          width: 80%;
+          font-size: 2.3rem;
+          line-height: 3rem;
+        }
+        &--text {
+          width: 80%;
+        }
+      }
+      &__video {
+        width: 100%;
+        height: 360px;
+        position: relative;
+        .front {
+          width: 90%;
+        }
+        .back {
+          width: 90%;
+        }
       }
     }
   }
@@ -656,6 +712,35 @@ header {
       }
       &__bottom {
         display: none;
+      }
+    }
+
+    // about
+    .about {
+      height: auto;
+      padding: 6rem 0 3rem 0;
+      &__text {
+        &--title {
+          font-size: 2rem;
+          line-height: 2.7rem;
+        }
+      }
+      &__video {
+        height: auto;
+        .front {
+          width: 100%;
+          position: relative;
+        }
+        .back {
+          display: none;
+        }
+        .play-icon {
+          width: 70px;
+          height: 70px;
+          img {
+            transform: scale(0.8);
+          }
+        }
       }
     }
   }
