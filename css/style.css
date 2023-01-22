@@ -303,10 +303,75 @@ header .nav__list--btn a {
   font-size: 18px;
   color: #fff;
 }
-#main .video {
+#main .about {
   width: 100%;
   height: 100vh;
-  border: 1px solid red;
+}
+#main .about .container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+#main .about__text {
+  width: 50%;
+}
+#main .about__text--name {
+  font-family: "Source Serif Pro", serif;
+  color: #ee5514;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+#main .about__text--title {
+  font-family: "Source Serif Pro", serif;
+  font-size: 44px;
+  line-height: 57.2px;
+  width: 340px;
+  margin-bottom: 1.25rem;
+}
+#main .about__text--text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  width: 326px;
+  color: #1a0a03;
+  opacity: 0.7;
+}
+#main .about__video {
+  width: 50%;
+  height: 380px;
+  position: relative;
+  border: 1px solid blue;
+}
+#main .about__video .front {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+}
+#main .about__video .back {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#main .about__video .play-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  transition: all 0.2s;
+}
+#main .about__video .play-icon:hover {
+  background-color: #ffdf9e;
 }
 
 @media screen and (max-width: 1200px) {
