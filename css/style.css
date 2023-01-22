@@ -646,6 +646,9 @@ header .nav__list--btn:hover a {
   }
 }
 @media screen and (max-width: 490px) {
+  header .nav {
+    padding: 30px 0;
+  }
   header .nav.top {
     padding: 15px 0;
   }
@@ -661,6 +664,17 @@ header .nav__list--btn:hover a {
   }
   header .nav__burger i.bi-x-lg {
     font-size: 1.5rem;
+  }
+  header .nav__list {
+    top: 105px;
+  }
+  header .nav__list.active {
+    top: 105px;
+    height: calc(100vh - 105px);
+  }
+  header .nav__list.active-scroll {
+    top: 75px;
+    height: calc(100vh - 75px);
   }
   #main .home__slider {
     width: 100%;

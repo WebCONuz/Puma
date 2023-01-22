@@ -162,7 +162,7 @@ header {
   }
 }
 
-// Body Main Styles ----------------------------------------------------------
+// Body Main Styles ------------------------------------------------------------
 #main {
   // home
   .home {
@@ -409,6 +409,7 @@ header {
   }
 }
 
+// Responsive Styles -----------------------------------------------------------
 @media screen and (max-width: 1200px) {
   #main {
     // home
@@ -750,6 +751,7 @@ header {
   // Header Section
   header {
     .nav {
+      padding: 30px 0;
       &.top {
         padding: 15px 0;
       }
@@ -764,6 +766,17 @@ header {
           &.bi-x-lg {
             font-size: 1.5rem;
           }
+        }
+      }
+      &__list {
+        top: 105px;
+        &.active {
+          top: 105px;
+          height: calc(100vh - 105px);
+        }
+        &.active-scroll {
+          top: 75px;
+          height: calc(100vh - 75px);
         }
       }
     }
