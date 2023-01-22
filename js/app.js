@@ -1,10 +1,11 @@
 window.onload = function () {
   const header = document.querySelector("#header");
+  const nav = document.querySelector(".nav");
   if (window.scrollY > 0) {
     header.classList.add("top");
+    nav.classList.add("top");
   }
 
-  const nav = document.querySelector(".nav");
   const menu = document.querySelector(".nav__list");
 
   window.addEventListener("scroll", function () {
