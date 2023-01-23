@@ -386,6 +386,84 @@ header .nav__list--btn:hover a {
 #main .about__video .play-icon:hover {
   background-color: #ffdf9e;
 }
+#main .feature {
+  width: 100%;
+  height: 95vh;
+  border: 1px solid red;
+}
+#main .feature__title {
+  margin-bottom: 4rem;
+}
+#main .feature__title--text {
+  text-align: center;
+  font-family: "Source Serif Pro", serif;
+  color: #ee5514;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  line-height: 1.9rem;
+  margin-bottom: 0.5rem;
+}
+#main .feature__title--title {
+  text-align: center;
+  font-family: "Source Serif Pro", serif;
+  font-size: 2.75rem;
+  line-height: 3.575rem;
+}
+#main .feature__list {
+  justify-content: space-between;
+}
+#main .feature__list--card {
+  width: calc(33.3333333333% - 2rem);
+  border-radius: 5px;
+  box-shadow: 0px 1px 14px rgba(26, 10, 3, 0.05);
+  text-align: center;
+  padding: 4rem 0;
+  transition: all 0.2s;
+}
+#main .feature__list--card .box {
+  width: 140px;
+  height: 140px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #e8f0fd;
+  margin: 0 auto 2.5rem;
+  transition: all 0.2s;
+}
+#main .feature__list--card .title {
+  max-width: 75%;
+  font-family: "Source Serif Pro", serif;
+  font-size: 2.05rem;
+  margin: 0 auto 1rem;
+}
+#main .feature__list--card .text {
+  max-width: 75%;
+  margin: 0 auto 1.5rem;
+  font-size: 0.9rem;
+  color: #1a0a03;
+  opacity: 0.7;
+}
+#main .feature__list--card .link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  color: #ee5514;
+  text-align: center;
+}
+#main .feature__list--card .link span {
+  margin-right: 10px;
+}
+#main .feature__list--card .link img {
+  width: 5px;
+}
+#main .feature__list--card:hover {
+  background-color: #fdeee8;
+  box-shadow: none;
+}
+#main .feature__list--card:hover .box {
+  background-color: #eddce8;
+}
 
 @media screen and (max-width: 1200px) {
   #main .home__slider .owl-carousel .carousel__card {

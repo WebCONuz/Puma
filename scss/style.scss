@@ -407,6 +407,86 @@ header {
       }
     }
   }
+
+  // features
+  .feature {
+    width: 100%;
+    height: 95vh;
+    border: 1px solid red;
+    &__title {
+      margin-bottom: 4rem;
+      &--text {
+        text-align: center;
+        font-family: "Source Serif Pro", serif;
+        color: $orange;
+        text-transform: uppercase;
+        font-size: 1.25rem;
+        line-height: 1.9rem;
+        margin-bottom: 0.5rem;
+      }
+      &--title {
+        text-align: center;
+        font-family: "Source Serif Pro", serif;
+        font-size: 2.75rem;
+        line-height: 3.575rem;
+      }
+    }
+    &__list {
+      justify-content: space-between;
+      &--card {
+        width: calc(100% / 3 - 2rem);
+        border-radius: 5px;
+        box-shadow: 0px 1px 14px rgba(26, 10, 3, 0.05);
+        text-align: center;
+        padding: 4rem 0;
+        transition: all 0.2s;
+        .box {
+          width: 140px;
+          height: 140px;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          background-color: #e8f0fd;
+          margin: 0 auto 2.5rem;
+          transition: all 0.2s;
+        }
+        .title {
+          max-width: 75%;
+          font-family: "Source Serif Pro", serif;
+          font-size: 2.05rem;
+          margin: 0 auto 1rem;
+        }
+        .text {
+          max-width: 75%;
+          margin: 0 auto 1.5rem;
+          font-size: 0.9rem;
+          color: #1a0a03;
+          opacity: 0.7;
+        }
+        .link {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 1.1rem;
+          color: $orange;
+          text-align: center;
+          span {
+            margin-right: 10px;
+          }
+          img {
+            width: 5px;
+          }
+        }
+        &:hover {
+          background-color: #fdeee8;
+          box-shadow: none;
+          .box {
+            background-color: #eddce8;
+          }
+        }
+      }
+    }
+  }
 }
 
 // Responsive Styles -----------------------------------------------------------
