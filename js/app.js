@@ -66,8 +66,11 @@ $(window).on("load", function () {
       0: {
         items: 1,
       },
-      768: {
+      576: {
         items: 2,
+      },
+      768: {
+        items: 3,
       },
       992: {
         items: 4,

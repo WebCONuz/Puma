@@ -40,7 +40,7 @@ li {
 }
 .owl-carousel .owl-nav button {
   position: absolute;
-  top: -15%;
+  top: -17%;
   font-size: 1.5rem !important;
   background-color: #f7b69a !important;
   width: 40px;
@@ -100,11 +100,32 @@ li {
   .container {
     max-width: 586px;
   }
+  .owl-carousel .owl-nav button {
+    top: -16%;
+    width: 35px;
+    height: 35px;
+  }
+  .owl-carousel .owl-nav .owl-prev {
+    right: 50px;
+  }
 }
 @media screen and (max-width: 596px) {
   .container {
     max-width: 576px;
     padding: 0 1rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .owl-carousel .owl-nav button {
+    top: 30px;
+    width: 30px;
+    height: 30px;
+  }
+  .owl-carousel .owl-nav .owl-prev {
+    left: 20px;
+  }
+  .owl-carousel .owl-nav .owl-next {
+    left: 55px;
   }
 }
 header {
@@ -867,6 +888,43 @@ header .nav__list--btn:hover a {
   #main .feature__list--card .link {
     font-size: 1rem;
   }
+  #main .gallery {
+    width: 100%;
+    height: auto;
+    padding: 2rem 0 4rem 0;
+  }
+  #main .gallery__title--text {
+    font-size: 2.3rem;
+    line-height: 3rem;
+  }
+  #main .gallery__category {
+    margin-bottom: 2rem;
+  }
+  #main .gallery__category h3 {
+    font-size: 1rem;
+  }
+  #main .gallery__category li {
+    margin-left: 1.2rem;
+    font-size: 0.9rem;
+  }
+  #main .gallery__category li::after {
+    height: 1px;
+  }
+  #main .gallery__carousel--item {
+    padding-right: 1.8rem;
+  }
+  #main .gallery__carousel--item h3 {
+    font-size: 20px;
+    margin-bottom: 0.9rem;
+  }
+  #main .gallery__carousel--item p {
+    margin-bottom: 0.7rem;
+    font-size: 0.8rem;
+  }
+  #main .gallery__carousel--item .btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
 }
 @media screen and (max-width: 576px) {
   #main .home {
@@ -921,6 +979,46 @@ header .nav__list--btn:hover a {
   #main .about__video .play-icon img {
     transform: scale(0.8);
   }
+  #main .feature__title {
+    margin-bottom: 2.2rem;
+  }
+  #main .feature__title--text {
+    font-size: 1.25rem;
+    margin-bottom: 0.6rem;
+    text-align: left;
+  }
+  #main .feature__title--title {
+    font-size: 2rem;
+    line-height: 2.7rem;
+    text-align: left;
+    width: 80%;
+  }
+  #main .gallery__title--text {
+    font-size: 2rem;
+    line-height: 2.7rem;
+  }
+  #main .gallery__category h3 {
+    font-size: 0.9rem;
+  }
+  #main .gallery__category li {
+    margin-left: 1rem;
+    font-size: 0.8rem;
+  }
+  #main .gallery__carousel--item {
+    padding-right: 0;
+  }
+  #main .gallery__carousel--item h3 {
+    font-size: 20px;
+    margin-bottom: 0.9rem;
+  }
+  #main .gallery__carousel--item p {
+    margin-bottom: 0.7rem;
+    font-size: 0.8rem;
+  }
+  #main .gallery__carousel--item .btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
 }
 @media screen and (max-width: 490px) {
   header .nav {
@@ -956,20 +1054,6 @@ header .nav__list--btn:hover a {
   #main .home__slider {
     width: 100%;
     max-width: 75%;
-  }
-  #main .feature__title {
-    margin-bottom: 2.2rem;
-  }
-  #main .feature__title--text {
-    font-size: 1.25rem;
-    margin-bottom: 0.6rem;
-    text-align: left;
-  }
-  #main .feature__title--title {
-    font-size: 2rem;
-    line-height: 2.7rem;
-    text-align: left;
-    width: 80%;
   }
   #main .feature__list--card {
     padding: 2.5rem 0;

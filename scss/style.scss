@@ -48,7 +48,7 @@ li {
   .owl-nav {
     button {
       position: absolute;
-      top: -15%;
+      top: -17%;
       font-size: 1.5rem !important;
       background-color: #f7b69a !important;
       width: 40px;
@@ -115,12 +115,44 @@ li {
   .container {
     max-width: 586px;
   }
+  // OWL CAROUCEL STYLE
+  .owl-carousel {
+    .owl-nav {
+      button {
+        top: -16%;
+        width: 35px;
+        height: 35px;
+      }
+      .owl-prev {
+        right: 50px;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 596px) {
   .container {
     max-width: 576px;
     padding: 0 1rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  // OWL CAROUCEL STYLE
+  .owl-carousel {
+    .owl-nav {
+      button {
+        top: 30px;
+        width: 30px;
+        height: 30px;
+      }
+      .owl-prev {
+        left: 20px;
+      }
+      .owl-next {
+        left: 55px;
+      }
+    }
   }
 }
 
@@ -970,6 +1002,49 @@ header {
         }
       }
     }
+
+    // gallery
+    .gallery {
+      width: 100%;
+      height: auto;
+      padding: 2rem 0 4rem 0;
+      &__title {
+        &--text {
+          font-size: 2.3rem;
+          line-height: 3rem;
+        }
+      }
+      &__category {
+        margin-bottom: 2rem;
+        h3 {
+          font-size: 1rem;
+        }
+        li {
+          margin-left: 1.2rem;
+          font-size: 0.9rem;
+          &::after {
+            height: 1px;
+          }
+        }
+      }
+      &__carousel {
+        &--item {
+          padding-right: 1.8rem;
+          h3 {
+            font-size: 20px;
+            margin-bottom: 0.9rem;
+          }
+          p {
+            margin-bottom: 0.7rem;
+            font-size: 0.8rem;
+          }
+          .btn {
+            padding: 10px 20px;
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -1038,6 +1113,60 @@ header {
         }
       }
     }
+
+    // feature
+    .feature {
+      &__title {
+        margin-bottom: 2.2rem;
+        &--text {
+          font-size: 1.25rem;
+          margin-bottom: 0.6rem;
+          text-align: left;
+        }
+        &--title {
+          font-size: 2rem;
+          line-height: 2.7rem;
+          text-align: left;
+          width: 80%;
+        }
+      }
+    }
+
+    // gallery
+    .gallery {
+      &__title {
+        &--text {
+          font-size: 2rem;
+          line-height: 2.7rem;
+        }
+      }
+      &__category {
+        h3 {
+          font-size: 0.9rem;
+        }
+        li {
+          margin-left: 1rem;
+          font-size: 0.8rem;
+        }
+      }
+      &__carousel {
+        &--item {
+          padding-right: 0;
+          h3 {
+            font-size: 20px;
+            margin-bottom: 0.9rem;
+          }
+          p {
+            margin-bottom: 0.7rem;
+            font-size: 0.8rem;
+          }
+          .btn {
+            padding: 10px 20px;
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -1088,20 +1217,6 @@ header {
 
     // features
     .feature {
-      &__title {
-        margin-bottom: 2.2rem;
-        &--text {
-          font-size: 1.25rem;
-          margin-bottom: 0.6rem;
-          text-align: left;
-        }
-        &--title {
-          font-size: 2rem;
-          line-height: 2.7rem;
-          text-align: left;
-          width: 80%;
-        }
-      }
       &__list {
         &--card {
           padding: 2.5rem 0;
