@@ -77,4 +77,16 @@ $(window).on("load", function () {
       },
     },
   });
+
+  var owl3 = $(".testimonials__container--slider");
+  owl3.owlCarousel({
+    loop: true,
+    nav: true,
+    dots: false,
+    responsive: {
+      0: {
+        items: 1,
+      },
+    },
+  });
 });
