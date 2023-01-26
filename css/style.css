@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@600&display=swap");
 *,
@@ -619,6 +620,66 @@ header .nav__list--btn:hover a {
   font-size: 18px;
   color: #fff;
   display: inline-block;
+}
+#main .testimonials {
+  width: 100%;
+  padding: 1rem 0 6rem 0;
+  border: 1px solid red;
+}
+#main .testimonials__title {
+  text-align: center;
+  font-family: "Source Serif Pro", serif;
+  font-size: 2.75rem;
+  line-height: 3.575rem;
+  margin-bottom: 1rem;
+}
+#main .testimonials__container--left {
+  width: calc(50% - 3rem);
+  margin-right: 3rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#main .testimonials__container--slider .slider-item {
+  width: 50%;
+  flex-direction: column;
+  padding: 1rem;
+}
+#main .testimonials__container--slider .slider-item img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 4.4rem;
+}
+#main .testimonials__container--slider .slider-item h4 {
+  font-size: 1.25rem;
+  font-family: "Source Serif Pro", serif;
+  margin-bottom: 1rem;
+  position: relative;
+}
+#main .testimonials__container--slider .slider-item h4::after {
+  content: "ʻʻ";
+  position: absolute;
+  top: -75px;
+  left: -10px;
+  font-size: 5.5rem;
+  color: #feefe8;
+}
+#main .testimonials__container--slider .slider-item p {
+  color: #1a0a03;
+  font-style: italic;
+  opacity: 0.7;
+  font-size: 0.9rem;
+  margin-bottom: 1.58rem;
+  max-width: 65%;
+}
+#main .testimonials__container--slider .slider-item b {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 0.6rem;
+}
+#main .testimonials__container--slider .slider-item span {
+  color: #1a0a03;
+  opacity: 0.7;
+  font-size: 0.9rem;
 }
 
 @media screen and (max-width: 1200px) {

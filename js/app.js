@@ -83,6 +83,7 @@ $(window).on("load", function () {
     loop: true,
     nav: true,
     dots: false,
+    margin: 2,
     responsive: {
       0: {
         items: 1,
