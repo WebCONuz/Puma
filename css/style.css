@@ -384,12 +384,11 @@ header .nav__list--btn:hover a {
   transition: all 0.2s;
 }
 #main .about__video .play-icon:hover {
-  background-color: #ffdf9e;
+  background-color: #fdeee8;
 }
 #main .feature {
   width: 100%;
   height: 95vh;
-  border: 1px solid red;
 }
 #main .feature__title {
   margin-bottom: 4rem;
@@ -430,6 +429,9 @@ header .nav__list--btn:hover a {
   margin: 0 auto 2.5rem;
   transition: all 0.2s;
 }
+#main .feature__list--card .box img {
+  width: 50%;
+}
 #main .feature__list--card .title {
   max-width: 75%;
   font-family: "Source Serif Pro", serif;
@@ -450,12 +452,16 @@ header .nav__list--btn:hover a {
   font-size: 1.1rem;
   color: #ee5514;
   text-align: center;
+  transition: all 0.2s;
 }
 #main .feature__list--card .link span {
   margin-right: 10px;
 }
 #main .feature__list--card .link img {
   width: 5px;
+}
+#main .feature__list--card .link:hover {
+  color: #1265e1;
 }
 #main .feature__list--card:hover {
   background-color: #fdeee8;
@@ -609,6 +615,40 @@ header .nav__list--btn:hover a {
   #main .about__video {
     height: 250px;
   }
+  #main .feature {
+    height: auto;
+  }
+  #main .feature__title {
+    margin-bottom: 2.5rem;
+  }
+  #main .feature__title--title {
+    font-size: 2rem;
+    line-height: 2.875rem;
+  }
+  #main .feature__list {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  #main .feature__list--card {
+    width: calc(50% - 2rem);
+    margin: 0 1rem 2rem 1rem;
+  }
+  #main .feature__list--card .box {
+    width: 130px;
+    height: 130px;
+    margin: 0 auto 2rem;
+  }
+  #main .feature__list--card .title {
+    max-width: 100%;
+    font-size: 1.8rem;
+    margin: 0;
+    margin-bottom: 0.7rem;
+  }
+  #main .feature__list--card .text {
+    max-width: 66%;
+    height: 4.05rem;
+    overflow-y: hidden;
+  }
 }
 @media screen and (max-width: 768px) {
   #main .home__left-title {
@@ -667,6 +707,36 @@ header .nav__list--btn:hover a {
   }
   #main .about__video .back {
     width: 90%;
+  }
+  #main .feature {
+    padding: 2rem 0;
+  }
+  #main .feature__title {
+    margin-bottom: 2.2rem;
+  }
+  #main .feature__title--text {
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+    margin-bottom: 0.4rem;
+  }
+  #main .feature__title--title {
+    font-size: 1.9rem;
+    line-height: 2.775rem;
+  }
+  #main .feature__list--card {
+    width: 100%;
+    padding: 3rem 0;
+    margin: 0 0 2rem 0;
+  }
+  #main .feature__list--card .box {
+    width: 120px;
+    height: 120px;
+  }
+  #main .feature__list--card .text {
+    height: 43.2px;
+  }
+  #main .feature__list--card .link {
+    font-size: 1rem;
   }
 }
 @media screen and (max-width: 576px) {
@@ -758,6 +828,31 @@ header .nav__list--btn:hover a {
     width: 100%;
     max-width: 75%;
   }
+  #main .feature__title {
+    margin-bottom: 2.2rem;
+  }
+  #main .feature__title--text {
+    font-size: 1.25rem;
+    margin-bottom: 0.6rem;
+    text-align: left;
+  }
+  #main .feature__title--title {
+    font-size: 2rem;
+    line-height: 2.7rem;
+    text-align: left;
+    width: 80%;
+  }
+  #main .feature__list--card {
+    padding: 2.5rem 0;
+  }
+  #main .feature__list--card .box {
+    width: 110px;
+    height: 110px;
+  }
+  #main .feature__list--card .text {
+    max-width: 70%;
+    height: 4.05rem;
+  }
 }
 @media screen and (max-width: 380px) {
   #main .home__left-title {
@@ -805,6 +900,10 @@ header .nav__list--btn:hover a {
   }
   #main .home__slider .owl-carousel .carousel__card {
     height: 210px;
+  }
+  #main .feature__list--card .text {
+    max-width: 85%;
+    height: 4.05rem;
   }
 }
 @media screen and (max-width: 290px) {
