@@ -44,7 +44,7 @@ window.onload = function () {
 // --------------------------------------------------------------------------
 
 $(window).on("load", function () {
-  var owl = $(".owl-carousel");
+  var owl = $(".home-carousel");
   owl.owlCarousel({
     loop: true,
     nav: true,
@@ -52,6 +52,25 @@ $(window).on("load", function () {
     responsive: {
       0: {
         items: 1,
+      },
+    },
+  });
+
+  var owl2 = $(".gallery__carousel");
+  owl2.owlCarousel({
+    loop: true,
+    nav: true,
+    dots: false,
+    margin: 2,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      768: {
+        items: 2,
+      },
+      992: {
+        items: 4,
       },
     },
   });
