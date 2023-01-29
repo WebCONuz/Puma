@@ -1387,6 +1387,8 @@ header {
             }
             p {
               max-width: 80%;
+              height: auto;
+              overflow-y: visible;
             }
           }
         }
@@ -1405,6 +1407,7 @@ header {
           width: 100%;
           padding: 2rem;
           border-radius: 0;
+          justify-content: flex-start;
           h3 {
             font-size: 1.5rem;
             margin-bottom: 1.5rem;
@@ -1412,6 +1415,8 @@ header {
           p {
             font-size: 1rem;
             margin-bottom: 1.5rem;
+            overflow-y: visible;
+            height: auto;
           }
           form {
             input {
@@ -1435,16 +1440,11 @@ header {
       &--item {
         width: 100%;
         margin-bottom: 2rem;
-        &.d-flex {
-          display: none;
-        }
         img.logo {
           margin-bottom: 0.5rem;
         }
         p {
           font-size: 1rem;
-          margin-bottom: 0rem;
-          line-height: 1.5rem;
         }
         .email {
           margin-bottom: 1.1rem;
@@ -1580,6 +1580,44 @@ header {
           .btn {
             padding: 10px 20px;
             font-size: 0.9rem;
+          }
+        }
+      }
+    }
+
+    // testimonials
+    .testimonials {
+      padding: 1rem 0 4rem 0;
+      &__title {
+        font-size: 2rem;
+        line-height: 2.7rem;
+      }
+      &__container {
+        &--slider {
+          .slider-item {
+            img {
+              width: 70px;
+              height: 70px;
+            }
+          }
+        }
+      }
+    }
+
+    // signup
+    .signup {
+      &__container {
+        &--right {
+          h3 {
+            margin-bottom: 1rem;
+          }
+          form {
+            input {
+              padding: 10px 15px;
+            }
+            button {
+              padding: 10px 15px;
+            }
           }
         }
       }

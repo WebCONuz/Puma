@@ -1233,6 +1233,8 @@ header .nav__list--btn:hover a {
   }
   #main .testimonials__container--slider .slider-item p {
     max-width: 80%;
+    height: auto;
+    overflow-y: visible;
   }
   #main .signup__container {
     flex-wrap: wrap;
@@ -1245,6 +1247,7 @@ header .nav__list--btn:hover a {
     width: 100%;
     padding: 2rem;
     border-radius: 0;
+    justify-content: flex-start;
   }
   #main .signup__container--right h3 {
     font-size: 1.5rem;
@@ -1253,6 +1256,8 @@ header .nav__list--btn:hover a {
   #main .signup__container--right p {
     font-size: 1rem;
     margin-bottom: 1.5rem;
+    overflow-y: visible;
+    height: auto;
   }
   #main .signup__container--right form input {
     padding: 10px 20px;
@@ -1269,16 +1274,11 @@ header .nav__list--btn:hover a {
     width: 100%;
     margin-bottom: 2rem;
   }
-  .footer__list--item.d-flex {
-    display: none;
-  }
   .footer__list--item img.logo {
     margin-bottom: 0.5rem;
   }
   .footer__list--item p {
     font-size: 1rem;
-    margin-bottom: 0rem;
-    line-height: 1.5rem;
   }
   .footer__list--item .email {
     margin-bottom: 1.1rem;
@@ -1387,6 +1387,26 @@ header .nav__list--btn:hover a {
   #main .gallery__carousel--item .btn {
     padding: 10px 20px;
     font-size: 0.9rem;
+  }
+  #main .testimonials {
+    padding: 1rem 0 4rem 0;
+  }
+  #main .testimonials__title {
+    font-size: 2rem;
+    line-height: 2.7rem;
+  }
+  #main .testimonials__container--slider .slider-item img {
+    width: 70px;
+    height: 70px;
+  }
+  #main .signup__container--right h3 {
+    margin-bottom: 1rem;
+  }
+  #main .signup__container--right form input {
+    padding: 10px 15px;
+  }
+  #main .signup__container--right form button {
+    padding: 10px 15px;
   }
 }
 @media screen and (max-width: 490px) {
