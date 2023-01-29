@@ -40,47 +40,6 @@ li {
   display: flex;
 }
 
-// OWL CAROUCEL STYLE
-.owl-carousel {
-  .owl-stage-outer {
-    padding: 1rem 0;
-  }
-  .owl-nav {
-    button {
-      position: absolute;
-      top: -17%;
-      font-size: 1.5rem !important;
-      background-color: #f7b69a !important;
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      opacity: 0.5;
-      transition: 0.2s;
-      display: block;
-      span {
-        display: none;
-      }
-      &:hover {
-        opacity: 1;
-      }
-    }
-    .owl-prev {
-      right: 80px;
-      background-image: url("../images/arrow-left.svg") !important;
-      background-size: 20% !important;
-      background-position: center !important;
-      background-repeat: no-repeat !important;
-    }
-    .owl-next {
-      right: 0;
-      background-image: url("../images/arrow-right.svg") !important;
-      background-size: 20% !important;
-      background-position: center !important;
-      background-repeat: no-repeat !important;
-    }
-  }
-}
-
 @media screen and (max-width: 1300px) {
   .container {
     max-width: 1140px;
@@ -115,44 +74,12 @@ li {
   .container {
     max-width: 586px;
   }
-  // OWL CAROUCEL STYLE
-  .owl-carousel {
-    .owl-nav {
-      button {
-        top: -16%;
-        width: 35px;
-        height: 35px;
-      }
-      .owl-prev {
-        right: 50px;
-      }
-    }
-  }
 }
 
 @media screen and (max-width: 596px) {
   .container {
     max-width: 576px;
     padding: 0 1rem;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  // OWL CAROUCEL STYLE
-  .owl-carousel {
-    .owl-nav {
-      button {
-        top: 30px;
-        width: 30px;
-        height: 30px;
-      }
-      .owl-prev {
-        left: 20px;
-      }
-      .owl-next {
-        left: 55px;
-      }
-    }
   }
 }
 
@@ -624,6 +551,43 @@ header {
       }
     }
     &__carousel {
+      .owl-stage-outer {
+        padding: 1rem 0;
+      }
+      .owl-nav {
+        button {
+          position: absolute;
+          top: -17%;
+          font-size: 1.5rem !important;
+          background-color: #f7b69a !important;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          opacity: 0.5;
+          transition: 0.2s;
+          display: block;
+          span {
+            display: none;
+          }
+          &:hover {
+            opacity: 1;
+          }
+        }
+        .owl-prev {
+          right: 80px;
+          background-image: url("../images/arrow-left.svg") !important;
+          background-size: 20% !important;
+          background-position: center !important;
+          background-repeat: no-repeat !important;
+        }
+        .owl-next {
+          right: 0;
+          background-image: url("../images/arrow-right.svg") !important;
+          background-size: 20% !important;
+          background-position: center !important;
+          background-repeat: no-repeat !important;
+        }
+      }
       &--item {
         flex-direction: column;
         padding-right: 2rem;
@@ -685,6 +649,45 @@ header {
       }
       &--slider {
         width: 50%;
+        .test-carousel {
+          .owl-stage-outer {
+            padding: 1rem 0;
+          }
+          .owl-nav {
+            button {
+              position: absolute;
+              top: 10%;
+              font-size: 1.5rem !important;
+              background-color: #f7b69a !important;
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              opacity: 0.5;
+              transition: 0.2s;
+              display: block;
+              span {
+                display: none;
+              }
+              &:hover {
+                opacity: 1;
+              }
+            }
+            .owl-prev {
+              right: 120px;
+              background-image: url("../images/arrow-left.svg") !important;
+              background-size: 20% !important;
+              background-position: center !important;
+              background-repeat: no-repeat !important;
+            }
+            .owl-next {
+              right: 40px;
+              background-image: url("../images/arrow-right.svg") !important;
+              background-size: 20% !important;
+              background-position: center !important;
+              background-repeat: no-repeat !important;
+            }
+          }
+        }
         .slider-item {
           flex-direction: column;
           padding: 1rem;
@@ -1125,6 +1128,21 @@ header {
         }
         &--slider {
           width: 100%;
+          .test-carousel {
+            .owl-nav {
+              button {
+                top: 50%;
+                width: 35px;
+                height: 35px;
+              }
+              .owl-prev {
+                left: 20px;
+              }
+              .owl-next {
+                right: 20px;
+              }
+            }
+          }
           .slider-item {
             padding: 1rem;
             align-items: center;
@@ -1343,6 +1361,16 @@ header {
         }
       }
       &__carousel {
+        .owl-nav {
+          button {
+            top: -16%;
+            width: 35px;
+            height: 35px;
+          }
+          .owl-prev {
+            right: 50px;
+          }
+        }
         &--item {
           padding-right: 1.8rem;
           h3 {
@@ -1567,6 +1595,19 @@ header {
         }
       }
       &__carousel {
+        .owl-nav {
+          button {
+            top: 30px;
+            width: 30px;
+            height: 30px;
+          }
+          .owl-prev {
+            left: 20px;
+          }
+          .owl-next {
+            left: 60px;
+          }
+        }
         &--item {
           padding-right: 0;
           h3 {
@@ -1594,10 +1635,28 @@ header {
       }
       &__container {
         &--slider {
+          .test-carousel {
+            .owl-nav {
+              button {
+                top: 50%;
+                width: 35px;
+                height: 35px;
+              }
+              .owl-prev {
+                left: 0px;
+              }
+              .owl-next {
+                right: 0px;
+              }
+            }
+          }
           .slider-item {
             img {
               width: 70px;
               height: 70px;
+            }
+            b {
+              margin-bottom: 0.2rem;
             }
           }
         }

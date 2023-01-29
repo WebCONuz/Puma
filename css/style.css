@@ -35,42 +35,6 @@ li {
   display: flex;
 }
 
-.owl-carousel .owl-stage-outer {
-  padding: 1rem 0;
-}
-.owl-carousel .owl-nav button {
-  position: absolute;
-  top: -17%;
-  font-size: 1.5rem !important;
-  background-color: #f7b69a !important;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  opacity: 0.5;
-  transition: 0.2s;
-  display: block;
-}
-.owl-carousel .owl-nav button span {
-  display: none;
-}
-.owl-carousel .owl-nav button:hover {
-  opacity: 1;
-}
-.owl-carousel .owl-nav .owl-prev {
-  right: 80px;
-  background-image: url("../images/arrow-left.svg") !important;
-  background-size: 20% !important;
-  background-position: center !important;
-  background-repeat: no-repeat !important;
-}
-.owl-carousel .owl-nav .owl-next {
-  right: 0;
-  background-image: url("../images/arrow-right.svg") !important;
-  background-size: 20% !important;
-  background-position: center !important;
-  background-repeat: no-repeat !important;
-}
-
 @media screen and (max-width: 1300px) {
   .container {
     max-width: 1140px;
@@ -100,32 +64,11 @@ li {
   .container {
     max-width: 586px;
   }
-  .owl-carousel .owl-nav button {
-    top: -16%;
-    width: 35px;
-    height: 35px;
-  }
-  .owl-carousel .owl-nav .owl-prev {
-    right: 50px;
-  }
 }
 @media screen and (max-width: 596px) {
   .container {
     max-width: 576px;
     padding: 0 1rem;
-  }
-}
-@media screen and (max-width: 576px) {
-  .owl-carousel .owl-nav button {
-    top: 30px;
-    width: 30px;
-    height: 30px;
-  }
-  .owl-carousel .owl-nav .owl-prev {
-    left: 20px;
-  }
-  .owl-carousel .owl-nav .owl-next {
-    left: 55px;
   }
 }
 header {
@@ -582,6 +525,41 @@ header .nav__list--btn:hover a {
 #main .gallery__category li:hover::after {
   width: 100%;
 }
+#main .gallery__carousel .owl-stage-outer {
+  padding: 1rem 0;
+}
+#main .gallery__carousel .owl-nav button {
+  position: absolute;
+  top: -17%;
+  font-size: 1.5rem !important;
+  background-color: #f7b69a !important;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  opacity: 0.5;
+  transition: 0.2s;
+  display: block;
+}
+#main .gallery__carousel .owl-nav button span {
+  display: none;
+}
+#main .gallery__carousel .owl-nav button:hover {
+  opacity: 1;
+}
+#main .gallery__carousel .owl-nav .owl-prev {
+  right: 80px;
+  background-image: url("../images/arrow-left.svg") !important;
+  background-size: 20% !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+#main .gallery__carousel .owl-nav .owl-next {
+  right: 0;
+  background-image: url("../images/arrow-right.svg") !important;
+  background-size: 20% !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
 #main .gallery__carousel--item {
   flex-direction: column;
   padding-right: 2rem;
@@ -643,6 +621,41 @@ header .nav__list--btn:hover a {
 }
 #main .testimonials__container--slider {
   width: 50%;
+}
+#main .testimonials__container--slider .test-carousel .owl-stage-outer {
+  padding: 1rem 0;
+}
+#main .testimonials__container--slider .test-carousel .owl-nav button {
+  position: absolute;
+  top: 10%;
+  font-size: 1.5rem !important;
+  background-color: #f7b69a !important;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  opacity: 0.5;
+  transition: 0.2s;
+  display: block;
+}
+#main .testimonials__container--slider .test-carousel .owl-nav button span {
+  display: none;
+}
+#main .testimonials__container--slider .test-carousel .owl-nav button:hover {
+  opacity: 1;
+}
+#main .testimonials__container--slider .test-carousel .owl-nav .owl-prev {
+  right: 120px;
+  background-image: url("../images/arrow-left.svg") !important;
+  background-size: 20% !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+#main .testimonials__container--slider .test-carousel .owl-nav .owl-next {
+  right: 40px;
+  background-image: url("../images/arrow-right.svg") !important;
+  background-size: 20% !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
 }
 #main .testimonials__container--slider .slider-item {
   flex-direction: column;
@@ -1016,6 +1029,17 @@ header .nav__list--btn:hover a {
   #main .testimonials__container--slider {
     width: 100%;
   }
+  #main .testimonials__container--slider .test-carousel .owl-nav button {
+    top: 50%;
+    width: 35px;
+    height: 35px;
+  }
+  #main .testimonials__container--slider .test-carousel .owl-nav .owl-prev {
+    left: 20px;
+  }
+  #main .testimonials__container--slider .test-carousel .owl-nav .owl-next {
+    right: 20px;
+  }
   #main .testimonials__container--slider .slider-item {
     padding: 1rem;
     align-items: center;
@@ -1195,6 +1219,14 @@ header .nav__list--btn:hover a {
   #main .gallery__category li::after {
     height: 1px;
   }
+  #main .gallery__carousel .owl-nav button {
+    top: -16%;
+    width: 35px;
+    height: 35px;
+  }
+  #main .gallery__carousel .owl-nav .owl-prev {
+    right: 50px;
+  }
   #main .gallery__carousel--item {
     padding-right: 1.8rem;
   }
@@ -1373,6 +1405,17 @@ header .nav__list--btn:hover a {
     margin-left: 1rem;
     font-size: 0.8rem;
   }
+  #main .gallery__carousel .owl-nav button {
+    top: 30px;
+    width: 30px;
+    height: 30px;
+  }
+  #main .gallery__carousel .owl-nav .owl-prev {
+    left: 20px;
+  }
+  #main .gallery__carousel .owl-nav .owl-next {
+    left: 60px;
+  }
   #main .gallery__carousel--item {
     padding-right: 0;
   }
@@ -1395,9 +1438,23 @@ header .nav__list--btn:hover a {
     font-size: 2rem;
     line-height: 2.7rem;
   }
+  #main .testimonials__container--slider .test-carousel .owl-nav button {
+    top: 50%;
+    width: 35px;
+    height: 35px;
+  }
+  #main .testimonials__container--slider .test-carousel .owl-nav .owl-prev {
+    left: 0px;
+  }
+  #main .testimonials__container--slider .test-carousel .owl-nav .owl-next {
+    right: 0px;
+  }
   #main .testimonials__container--slider .slider-item img {
     width: 70px;
     height: 70px;
+  }
+  #main .testimonials__container--slider .slider-item b {
+    margin-bottom: 0.2rem;
   }
   #main .signup__container--right h3 {
     margin-bottom: 1rem;

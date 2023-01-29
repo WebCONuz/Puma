@@ -78,11 +78,11 @@ $(window).on("load", function () {
     },
   });
 
-  var owl3 = $(".testimonials__container--slider");
+  var owl3 = $(".test-carousel");
   owl3.owlCarousel({
     loop: true,
     nav: true,
-    dots: true,
+    dots: false,
     margin: 2,
     responsive: {
       0: {
