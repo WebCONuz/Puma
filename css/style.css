@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@600&display=swap");
 *,
@@ -624,7 +623,6 @@ header .nav__list--btn:hover a {
 #main .testimonials {
   width: 100%;
   padding: 1rem 0 6rem 0;
-  border: 1px solid red;
 }
 #main .testimonials__title {
   text-align: center;
@@ -633,14 +631,19 @@ header .nav__list--btn:hover a {
   line-height: 3.575rem;
   margin-bottom: 1rem;
 }
+#main .testimonials__container {
+  overflow: hidden;
+}
 #main .testimonials__container--left {
   width: calc(50% - 3rem);
   margin-right: 3rem;
   -o-object-fit: cover;
      object-fit: cover;
 }
-#main .testimonials__container--slider .slider-item {
+#main .testimonials__container--slider {
   width: 50%;
+}
+#main .testimonials__container--slider .slider-item {
   flex-direction: column;
   padding: 1rem;
 }
@@ -656,12 +659,18 @@ header .nav__list--btn:hover a {
   position: relative;
 }
 #main .testimonials__container--slider .slider-item h4::after {
-  content: "ʻʻ";
+  content: "";
   position: absolute;
-  top: -75px;
-  left: -10px;
+  top: -50px;
+  left: 0px;
   font-size: 5.5rem;
   color: #feefe8;
+  width: 36.38px;
+  height: 30.39px;
+  background-image: url("../images/tutuq.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
 }
 #main .testimonials__container--slider .slider-item p {
   color: #1a0a03;
@@ -680,6 +689,133 @@ header .nav__list--btn:hover a {
   color: #1a0a03;
   opacity: 0.7;
   font-size: 0.9rem;
+}
+#main .signup {
+  width: 100%;
+  padding-top: 1rem;
+}
+#main .signup__container {
+  width: 100%;
+}
+#main .signup__container--left {
+  width: 40%;
+  border-radius: 7px 0 0 7px;
+  overflow: hidden;
+}
+#main .signup__container--left img {
+  width: 100%;
+  transform: scaleX(1.12) scaleY(1.23);
+}
+#main .signup__container--right {
+  width: 60%;
+  background-color: rgba(129, 168, 218, 0.1);
+  padding: 4rem;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 0 7px 7px 0;
+}
+#main .signup__container--right h3 {
+  font-size: 2rem;
+  color: #1a0a03;
+  font-family: "Source Serif Pro", serif;
+  line-height: 43.4px;
+}
+#main .signup__container--right p {
+  font-size: 1.15rem;
+  color: #1a0a03;
+  opacity: 0.7;
+  line-height: 28.8px;
+}
+#main .signup__container--right form {
+  width: 100%;
+}
+#main .signup__container--right form input {
+  padding: 15px 30px;
+  font-size: 0.9rem;
+  border-radius: 7px 0 0 7px;
+  background-color: transparent;
+  border: 1px solid rgba(26, 10, 3, 0.3);
+  outline: 0;
+  width: 100%;
+}
+#main .signup__container--right form button {
+  padding: 15px 30px;
+  font-size: 0.9rem;
+  border-radius: 0 7px 7px 0;
+  background-color: #ee5514;
+  color: #fff;
+  border: 0;
+  outline: 0;
+}
+
+.footer {
+  background-color: #feefe8;
+  padding: 4rem 0 0 0;
+}
+.footer__list--item {
+  width: 25%;
+  flex-direction: column;
+}
+.footer__list--item img.logo {
+  width: 94px;
+  margin-bottom: 1.5rem;
+}
+.footer__list--item p {
+  color: #1a0a03;
+  opacity: 0.7;
+  font-size: 1.15rem;
+  line-height: 28.8px;
+  margin-bottom: 1.5rem;
+}
+.footer__list--item .email {
+  margin-bottom: 1rem;
+}
+.footer__list--item .social-icons a {
+  margin-right: 2rem;
+}
+.footer__list--item h3 {
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+.footer__list--item a {
+  color: #1a0a03;
+  opacity: 0.7;
+  font-size: 1.15rem;
+  line-height: 28.8px;
+  margin-bottom: 1rem;
+  transition: all 0.2s;
+}
+.footer__list--item a:hover {
+  color: red;
+}
+.footer__list--item form {
+  width: 100%;
+}
+.footer__list--item form input {
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  border-radius: 5px 0 0 5px;
+  background-color: transparent;
+  border: 1px solid rgba(26, 10, 3, 0.3);
+  outline: 0;
+  width: 100%;
+}
+.footer__list--item form button {
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  border-radius: 0 5px 5px 0;
+  background-color: #ee5514;
+  color: #fff;
+  border: 0;
+  outline: 0;
+}
+.footer__copy {
+  text-align: center;
+  padding: 1.5rem 0 2rem 0;
+  border-top: 1px solid rgba(26, 10, 3, 0.3);
+  color: #1a0a03;
+  opacity: 0.6;
+  font-weight: 500;
 }
 
 @media screen and (max-width: 1200px) {

@@ -668,7 +668,7 @@ header {
   .testimonials {
     width: 100%;
     padding: 1rem 0 6rem 0;
-    border: 1px solid red;
+    // border: 1px solid red;
     &__title {
       text-align: center;
       font-family: "Source Serif Pro", serif;
@@ -677,16 +677,19 @@ header {
       margin-bottom: 1rem;
     }
     &__container {
+      // border: 1px solid blue;
+      overflow: hidden;
       &--left {
         width: calc(100% / 2 - 3rem);
         margin-right: 3rem;
         object-fit: cover;
       }
       &--slider {
+        width: 50%;
         .slider-item {
-          width: 50%;
           flex-direction: column;
           padding: 1rem;
+          // border: 1px solid red;
           img {
             width: 100px;
             height: 100px;
@@ -698,12 +701,18 @@ header {
             margin-bottom: 1rem;
             position: relative;
             &::after {
-              content: "ʻʻ";
+              content: "";
               position: absolute;
-              top: -75px;
-              left: -10px;
+              top: -50px;
+              left: 0px;
               font-size: 5.5rem;
               color: #feefe8;
+              width: 36.38px;
+              height: 30.39px;
+              background-image: url("../images/tutuq.svg");
+              background-repeat: no-repeat;
+              background-size: 100%;
+              background-position: center;
             }
           }
           p {
@@ -727,6 +736,145 @@ header {
         }
       }
     }
+  }
+
+  // signup
+  .signup {
+    width: 100%;
+    padding-top: 1rem;
+    // border: 1px solid red;
+    &__container {
+      width: 100%;
+
+      &--left {
+        width: 40%;
+        // border: 1px solid blue;
+        border-radius: 7px 0 0 7px;
+        overflow: hidden;
+        img {
+          width: 100%;
+          transform: scaleX(1.12) scaleY(1.23);
+        }
+      }
+      &--right {
+        width: 60%;
+        // border: 1px solid blue;
+        background-color: rgba($color: #81a8da, $alpha: 0.1);
+        padding: 4rem;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 0 7px 7px 0;
+        h3 {
+          font-size: 2rem;
+          color: #1a0a03;
+          font-family: "Source Serif Pro", serif;
+          line-height: 43.4px;
+        }
+        p {
+          font-size: 1.15rem;
+          color: #1a0a03;
+          opacity: 0.7;
+          line-height: 28.8px;
+        }
+        form {
+          width: 100%;
+          input {
+            padding: 15px 30px;
+            font-size: 0.9rem;
+            border-radius: 7px 0 0 7px;
+            background-color: transparent;
+            border: 1px solid rgba($color: #1a0a03, $alpha: 0.3);
+            outline: 0;
+            width: 100%;
+          }
+          button {
+            padding: 15px 30px;
+            font-size: 0.9rem;
+            border-radius: 0 7px 7px 0;
+            background-color: $orange;
+            color: #fff;
+            border: 0;
+            outline: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Body Footer Styles ----------------------------------------------------------
+.footer {
+  background-color: #feefe8;
+  padding: 4rem 0 0 0;
+  &__list {
+    &--item {
+      width: 25%;
+      flex-direction: column;
+      // border: 1px solid red;
+      img.logo {
+        width: 94px;
+        margin-bottom: 1.5rem;
+      }
+      p {
+        color: #1a0a03;
+        opacity: 0.7;
+        font-size: 1.15rem;
+        line-height: 28.8px;
+        margin-bottom: 1.5rem;
+      }
+      .email {
+        margin-bottom: 1rem;
+      }
+      .social-icons {
+        a {
+          margin-right: 2rem;
+        }
+      }
+      h3 {
+        font-weight: 500;
+        margin-bottom: 2rem;
+      }
+      a {
+        color: #1a0a03;
+        opacity: 0.7;
+        font-size: 1.15rem;
+        line-height: 28.8px;
+        margin-bottom: 1rem;
+        transition: all 0.2s;
+        &:hover {
+          color: red;
+        }
+      }
+      form {
+        width: 100%;
+        input {
+          padding: 10px 20px;
+          font-size: 0.9rem;
+          border-radius: 5px 0 0 5px;
+          background-color: transparent;
+          border: 1px solid rgba($color: #1a0a03, $alpha: 0.3);
+          outline: 0;
+          width: 100%;
+        }
+        button {
+          padding: 10px 20px;
+          font-size: 0.9rem;
+          border-radius: 0 5px 5px 0;
+          background-color: $orange;
+          color: #fff;
+          border: 0;
+          outline: 0;
+        }
+      }
+    }
+  }
+  &__copy {
+    text-align: center;
+    padding: 1.5rem 0 2rem 0;
+    border-top: 1px solid rgba($color: #1a0a03, $alpha: 0.3);
+    color: #1a0a03;
+    opacity: 0.6;
+    font-weight: 500;
   }
 }
 
