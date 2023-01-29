@@ -82,7 +82,7 @@ $(window).on("load", function () {
   owl3.owlCarousel({
     loop: true,
     nav: true,
-    dots: false,
+    dots: true,
     margin: 2,
     responsive: {
       0: {
